@@ -33,6 +33,7 @@ pyright = "*"
 types-beautifulsoup4 = "*"
 selenium = "*"
 gunicorn = "20.1.0"
+sentry-sdk = "*"
 
 [dev-packages]
 

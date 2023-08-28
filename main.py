@@ -10,6 +10,18 @@ from flathunter.logging import configure_logging
 
 from flathunter.web import app
 
+
+import sentry_sdk
+
+
+sentry_sdk.init(
+    dsn="https://9071c86899b3e5d3c8c67e91868c441f@o4505765341102080.ingest.sentry.io/4505782666067968",
+
+    # Set traces_sample_rate to 1.0 to capture 100%
+    # of transactions for performance monitoring.
+    # We recommend adjusting this value in production,
+    traces_sample_rate=1.0,
+)
 # load config
 args = parse()
 config_handle = args.config
